@@ -1,3 +1,4 @@
 # mle-zoomcamp-prj
 
-This is an example git 
+# Project description and objective - 
+
