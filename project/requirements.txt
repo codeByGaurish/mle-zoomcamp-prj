@@ -6,3 +6,12 @@ hyperopt
 xgboost
 fastparquet
 boto3
+Jupyter
+pyarrow
+prefect
+tqdm
+requests
+joblib
+psycopg
+psycopg_binary
+matplotlib

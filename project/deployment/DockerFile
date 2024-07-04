@@ -1,0 +1,17 @@
+FROM python:3.9.7-slim
+
+RUN pip install -U pip & pip install pipenv
+
+RUN pip install pandas
+
+RUN pip install pyarrow
+
+COPY [ "Pipfile", "Pipfile.lock", "./" ]
+
+RUN pipenv install --system --deploy
+
+COPY [ "deplpyment_example_python_Script.py", "deplpyment_example_python_Script.py", "./" ]
+
+EXPOSE 9696
+
+ENTRYPOINT [ "python", "deplpyment_example_python_Script.py" ]
